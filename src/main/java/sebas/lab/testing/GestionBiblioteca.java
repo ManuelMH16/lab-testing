@@ -1,18 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package sebas.lab.testing;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author jacks
- */
 public class GestionBiblioteca {
-        private List<String> librosDisponibles;
+    
+    private List<String> librosDisponibles;
     private static final int CAPACIDAD_MAXIMA = 100;
     
     public GestionBiblioteca() {
@@ -66,7 +59,6 @@ public class GestionBiblioteca {
     }
     
     public List<String> obtenerLibrosDisponibles() {
-        // se está retornando una nueva instancia (copia)
         return new ArrayList<>(librosDisponibles);
     }
     

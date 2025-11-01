@@ -18,18 +18,23 @@
     </properties>
     
     <dependencies>
-        <!-- JUnit 4 - Framework de pruebas unitarias -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
+        
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>4.11.0</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
     
     <build>
         <plugins>
-            <!-- Plugin del compilador de Maven -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -40,7 +45,6 @@
                 </configuration>
             </plugin>
             
-            <!-- Plugin de Surefire para ejecutar los tests -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
